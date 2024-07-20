@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="grand">
+    <div class="logo">
+        <h1>Weather Web</h1>
+    </div>
+    <div class="srch">
+        <div class="search">
+            <input placeholder="Search..." type="text" class="srch" id="srch">
+            <button type="submit" class="srchbtn" id="srchbtn">Go</button>
+        </div>
+        <a href="#" class="location-crosshairs" id="lsrch" title="serch by location"><i class="fa-solid fa-location-crosshairs"></i></a>   
+    </div>
+    
+
+</div>
+<div class="container" id="main">
+    <div class="weth" >City Name :<h1 id="city"></h1><p id="desc"></p></div>
+    <div class="weth" id="dt_time">Date & Time :
+        <h2><span id="dt">00</span>/<span id="mth">00</span>/<span id="yr">0000</span></h2><p><span id="hrs">00</span>:<span id="min">00</span>:<span id="sec">00</span></p></div>
+    <div class="weth" >Temperature :
+        <h1 id="temp">00</h1><img id="icons" src=""></div>
+    <div class="weth" >Temp-Max :
+        <h1 id="temp-max">00</h1><i class="fa-solid fa-temperature-arrow-up"></i></div>
+    <div class="weth" >Temp-Min :
+        <h1 id="temp-min">00</h1><i class="fa-solid fa-temperature-arrow-down"></i></div>
+    <div class="weth" >Wind-Speed :
+        <h1 id="wind">00km/h</h1><i class="fa-solid fa-wind"></i></div>
+    <div class="weth" >Humidity :
+        <p id="humm"> 00<sup>%</sup></p></div>
+
+</div>
+<div class="elif">
+    <h1>Please Search Valid City Name</h1>
+    <span class="cross">&#10006;</span>
+</div>
+<footer class="footer">
+    <p>Coppyright &copy;2024 Weather Forecast Website | All rights reserved.</p><br>
+    <p>Design & Developed by Mohan kumar.</p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
