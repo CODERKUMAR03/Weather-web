@@ -49,6 +49,7 @@ async function check_weather(city){
 }
 else if(data.cod == 404){
         document.querySelector(".elif").classList.add('showerror');
+        document.querySelector(".container").classList.remove('showdata');
         console.log("error");
     cross.addEventListener('click',() =>{
         document.querySelector(".elif").classList.remove('showerror');
