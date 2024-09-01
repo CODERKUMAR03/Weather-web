@@ -1,8 +1,8 @@
+
 const hrs = document.getElementById("hrs");
-const min = document.getElementById("min");
 const sec = document.getElementById("sec");
-const date = document.getElementById("dt");
-const mnth = document.getElementById("mth");
+const min = document.getElementById("min");
+
 const year = document.getElementById("yr");
 const cityname = document.getElementById("city");
 const temprch = document.getElementById("temp");
@@ -12,8 +12,7 @@ const main = document.getElementById("main");
 const tempmax = document.getElementById("temp-max");
 const tempmin = document.getElementById("temp-min");
 const winspd = document.getElementById("wind");
-const srise = document.getElementById("srise");
-const sset = document.getElementById("sset");
+
 const humm = document.getElementById("humm");
 const lsrch = document.getElementById("lsrch");
 const desc = document.getElementById("desc");
@@ -71,13 +70,13 @@ srch_btn.addEventListener('click', () =>{
 });
 setInterval(() => {
     let time = new Date();
-        date.innerHTML = time.getDate(); 
-        mnth.innerHTML = time.getMonth();       
-        year.innerHTML = time.getYear();       
+             
+        year.innerHTML = time.toDateString();       
         hrs.innerHTML = time.getHours();
         min.innerHTML = time.getMinutes();
         sec.innerHTML = time.getSeconds();
-
+        
+        // console.log(time.now());
 },1000);
 
 
@@ -115,8 +114,7 @@ lsrch.addEventListener('click', async()=>{
             humm.innerHTML= `${result.main.humidity}%`;
             winspd.innerHTML= `${result.wind.speed} km/h`;
             desc.innerHTML = `${result.weather[0].description}`;
-            srise.innerHTML = `${result.sys.sunrise}`;
-            sset.innerHTML = `${result.sys.sunset}`;
+            
             // console.log(result.sys.sunrise);
     
     
